@@ -16,8 +16,8 @@ def calculate(num1, num2, operator):
     problem = f"{num1} {operator} {num2}"
     if operator == '+':
         answer = num1 + num2
-    elif operator == '+':
-        answer = num1 + num2
+    elif operator == '-':
+        answer = num1 - num2
     else:
         answer = num1 * num2
     return problem, answer
