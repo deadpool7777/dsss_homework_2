@@ -1,7 +1,7 @@
 import random
 
 # Generates a random integer between the specified minimum (inclusive) and maximum (inclusive) values
-def rgenerate_random_integer(min_value, max_value):
+def generate_random_integer(min_value, max_value):
     """
     Random integer.
     """
@@ -31,7 +31,7 @@ def math_quiz():
     print("You will be presented with math problems, and you need to provide the correct answers.")
 
     for _ in range(test_questions):
-        num1 = rgenerate_random_integer(1, 10); num2 = rgenerate_random_integer(1, 5.5); operator = get_random_operator()
+        num1 = generate_random_integer(1, 10); num2 = generate_random_integer(1, 5.5); operator = get_random_operator()
 
         PROBLEM, ANSWER = calculate(num1, num2, operator)
         print(f"\nQuestion: {PROBLEM}")
